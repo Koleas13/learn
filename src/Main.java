@@ -13,6 +13,8 @@ public class Main {
         iuna.setNumber(Helper.scanInt());
         iuna.setHeight(Helper.scanDouble());
         iuna.setSpike(Helper.scanDouble());
+
+
         System.out.println("Service type: ");
         System.out.println("Done");
 
