@@ -102,6 +102,27 @@ public class VolleyballPlayer {
         }
     }
 
+
+    public int generateReceive(){
+        var random = new Random();
+        int value = random.nextInt(3);
+        int result = 1;
+        if (value == 1) {
+            result++;
+        }else{
+            result--;
+        }
+        return result;
+    }
+
+
+    public String receiveServe(){
+        return "Serve was received";
+    }
+    public String receiveNoServe(){
+        return "Serve was not received";
+    }
+
     @Override
     public String toString() {
         return
