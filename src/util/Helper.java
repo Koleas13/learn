@@ -19,4 +19,8 @@ public class Helper {
         return result;
     }
 
+    public static int integer(){
+        int er = 12;
+        return er;
+    }
 }
