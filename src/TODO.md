@@ -1,5 +1,5 @@
 Create a package game_app
-Create a class Player (you can just copy, what you already have in VolleyballPlayer)
+Create a class Player (you can just copy, what you already have in java.VolleyballPlayer)
 Create a class Game with the fields:
 - team1 : array of Player
 - nameTeam1: String
