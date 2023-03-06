@@ -32,6 +32,9 @@ class Main {
         obj1.methodOfOne();
 
         ((Two)obj1).methodOfTwo(); //can't call method of two without cast
+
+
+
     }
 }
 

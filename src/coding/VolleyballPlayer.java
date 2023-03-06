@@ -1,5 +1,6 @@
 package coding;
 
+import java.util.Objects;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -135,5 +136,24 @@ public class VolleyballPlayer {
                 "ServiceType=" + serviceType +'.' + '\n' +
                 "Gender=" + gender +'.' + '\n';
 
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        VolleyballPlayer that = (VolleyballPlayer) o;
+        return number == that.number && Double.compare(that.height, height) == 0
+               && Double.compare(that.spike, spike) == 0 && Objects.equals(name, that.name)
+               && Objects.equals(serviceType, that.serviceType) && Objects.equals(gender, that.gender);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, number, height, spike, serviceType, gender);
     }
 }
