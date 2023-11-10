@@ -25,7 +25,7 @@ class Main {
     public static void main(String[] args) {
         One obj = new Two();
         obj.process();
-
+        int a = 12;
 
 
         One obj1 = new One();
