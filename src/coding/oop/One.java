@@ -25,7 +25,7 @@ class Main {
     public static void main(String[] args) {
         One obj = new Two();
         obj.process();
-        obj.methodOfOne();
+
 
 
         One obj1 = new One();
